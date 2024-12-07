@@ -1,6 +1,9 @@
+import { useGeKpisQuery } from "@/state/api";
+
 type Props = {};
 
 const Dashboard = (_props: Props) => {
+  const {data} = useGeKpisQuery();
   return (
     <div className="w-full flex justify-center items-center pt-[70px] pb-7">
       <div className="text-gray-300 grid lg:grid-cols-3 gap-4">
